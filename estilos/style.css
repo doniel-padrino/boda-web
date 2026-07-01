@@ -35,7 +35,7 @@ body{
 
 header{
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     position: relative;
     color: white;
     display: flex;
@@ -73,7 +73,7 @@ nav{
 }
 
 .idiomas img{
-    width: 35px;
+    width: 50px;
     cursor: pointer;
     transition: .3s;
 }
@@ -96,27 +96,28 @@ nav{
 
 #titulo{
     font-family: "Corinthia";
-    font-size: 7rem;
+    font-size: 9rem;
     font-weight: lighter;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #mensaje1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 30px;
     text-shadow: 0px 1px 3px gray;
 }
 
 time{
     font-family: serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     font-style: italic;
 }
 
 .ubi{
     font-family: serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /*CONTEO REGRESIVO*/
@@ -138,14 +139,13 @@ time{
 }
 
 .tiempo span{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 
 .anillos{
     position: absolute;
-    top: 70vh;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -166,7 +166,7 @@ main{
 }
 
 .cards{
-    width: 230px;
+    width: 400px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -179,6 +179,8 @@ main{
 
 }
 
+
+
 .cards:hover{
     transform: translateY(-10);
 
@@ -187,7 +189,7 @@ main{
 
 .cajaImg{
     width: 90%;
-    height: 210px;
+    height: auto;
     margin-top: 15px;
     overflow: hidden;
 }
@@ -202,29 +204,51 @@ main{
 section p{
     margin: 5px;
     text-align: center;
-    width: 100px;
+    width: 180px;
     color: gray;
+    font-size: 2rem;
 }
 
-.info{
+.info {
     width: 150px;
+    display: flex;
+    margin: 20px;
 }
+
 .info a {
     display: flex;
     width: 100%;
     text-decoration: none;
     font-family: "Corinthia";
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     line-height: 0.7;
     text-align: center;
     justify-content: center;
     color: #A78D78;
     cursor: pointer;
-    transition: .3s;
+    transition: color .3s, transform .3s;
+
+    /* Animación continua */
+    animation: latido 1.5s infinite ease-in-out;
 }
 
-.info a:hover{
+.info a:hover {
     color: #291C0E;
-    transform: scale(1.1);
+    transform: scale(1.15);
+    animation-play-state: paused; /* Detiene la animación al pasar el ratón */
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

@@ -29,7 +29,6 @@ body{
 
 header{
     width: 100%;
-    height: 70vh;
     position: relative;
     color: white;
     display: flex;
@@ -67,8 +66,8 @@ nav{
     top: 15px;
     left: 20px;
 
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 
     display: flex;
     align-items: center;
@@ -110,12 +109,11 @@ nav{
 
 .idiomas{
     display: flex;
-    gap: 20px;
-
+    gap: 30px;
 }
 
 .idiomas img{
-    width: 35px;
+    width: 50px;
     cursor: pointer;
     transition: .3s;
 }
@@ -140,48 +138,45 @@ nav{
     font-family: "Corinthia";
     font-weight: lighter;
     text-align: center;
-    font-size: 7rem;
+    font-size: 9rem;
     margin-bottom: 20px;
 }
 
 #mensaje1{
     font-family: serif;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 time{
     font-family: serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     font-style: italic;
 }
 
 .ubi{
     font-family: serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
 
 }
 
 .cta{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
     display: flex;
+    bottom: 30px;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-
     gap: 15px;
 }
 
 .btn-confirmar{
+    display: flex;
     padding: 12px 30px;
-
+    margin-top: 10px;
+    font-size: 1.5rem;
     background: rgba(255,255,255,.2);
 
     color: white;
@@ -206,10 +201,10 @@ time{
 .flecha{
     width: 25px;
     height: 25px;
-
     border-right: 4px solid white;
     border-bottom: 4px solid white;
-
+    margin-left: 20px;
+    margin-bottom: 20px;
     transform: rotate(45deg);
 
     animation: bajar 1.5s infinite;
@@ -238,6 +233,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 2rem;
 
 }
 
@@ -258,7 +254,7 @@ main{
 }
 
 .cajaImg p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
@@ -286,7 +282,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     gap: 10px;
     background-color: #291C0E;
 }
@@ -315,7 +311,7 @@ main{
 }
 
 .rsvp h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
@@ -377,6 +373,10 @@ button:hover{
 
 }
 
+#boton{
+    font-size: 1.5rem;
+}
+
 /*************ALBUM DE BODA*******************/
 .album-boda{
     text-align:center;
@@ -385,19 +385,19 @@ button:hover{
 
 .album-boda h2{
     font-family: "Corinthia";
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: lighter;
     color: #A78D78;
 }
 
 .album-boda p{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .btn-subir{
     margin-top: 20px;
     display:inline-block;
-
+    font-size: 3rem;
     padding:15px 30px;
 
     background:#A78D78;
@@ -425,7 +425,7 @@ button:hover{
 .info3{
     max-width: 1000px;
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 2rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -436,7 +436,7 @@ button:hover{
 .info3 h3{
     font-family: "Corinthia";
     font-weight: lighter;
-    font-size: 4rem;
+    font-size: 6rem;
     color: #291C0E;
 }
 
